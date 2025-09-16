@@ -48,7 +48,31 @@ Next.js Full Stack Project w/ Nextjs 15 & React 19
 - create the app\not-found.tsx file and copy the codes from https://nextjs.org/docs/app/getting-started/error-handling#not-found
 
 - update the metada in app\layout.tsx - this will update the browser title
-- add the metadata in home\page.tsx, tcikets\page.tsx, etc
+- add the metadata in home\page.tsx, tickets\page.tsx, etc
+
+-----------PART 2: NextJS Authentication & Login-----------
+- use kinde.com, create a free account, this is used for SSO or 3rd party authentication
+    - https://jesmar.kinde.com/admin/cx/_:nav&m:application_details::_:submenu&s:quick_start&id:dbefeae69fee40e3bc9819f5852ff30e::_:action&tab:existing
+> npx nypm add @kinde-oss/kinde-auth-nextjs     - install sdk
+- update environment vars
+    - create the src\.env.local and copy paste the values
+- api endpoints
+    - create src/app/api/auth/[kindeAuth]/route.js and copy paste the values
+    - the bracket directory is a dynamic directory 
+- add sign up and sign in buttons
+
+> npm install @kinde-oss/kinde-auth-nextjs
+
+- create the src\app\login\page.tsx
+
+- configure kinde account
+- add user
+- add permission
+
+- add the logout link in the Header.tsx
+
+- add middleware to secure the pages after logout
+- add src\middleware.ts
 
 
 
