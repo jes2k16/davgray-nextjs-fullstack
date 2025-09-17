@@ -75,6 +75,21 @@ Next.js Full Stack Project w/ Nextjs 15 & React 19
 - add src\middleware.ts
 
 
+-----------PART 3: Next.js + PostgreSQL + Drizzle ORM-----------
+- create account in neon.tech and create a postgres database
+> npm install drizzle-orm @neondatabase/serverless
+> npm install -D drizzle-kit tsx dotenv                 > "-D" means dev dependencies
+
+- create src\db\index.ts and use drizzle, neon, config
+- create src\db\schema.ts
+- create src\db\migrate.ts
+- create \drizzle.config.ts
+
+- update the package.json > scripts part to add the db:generate and db:migrate to make it reusable
+- dont forget to update the .env.local to add the postgres connection string
+> npm run db:generate
+> npm run db:migrate
+
 
 
 
