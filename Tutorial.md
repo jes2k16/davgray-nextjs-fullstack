@@ -90,6 +90,22 @@ Next.js Full Stack Project w/ Nextjs 15 & React 19
 > npm run db:generate
 > npm run db:migrate
 
+-----------PART 4: Next.js SQL Data Queries with Drizzle ORM-----------
+- update the tech = "new-ticket@example.com" in all records in neon.tech
+
+- create src\lib\queries\getCustomer.ts
+- create src\lib\queries\getTicket.ts
+
+- create src\app\(rs)\customers\from\page.tsx
+- create src\components\BackButton.tsx
+
+> npm run dev
+    - access the form get: http://localhost:3000/customers/form?customerId=2
+
+- create src\app\(rs)\tickets\from\page.tsx
+- implement sentry in both forms
+
+
 
 
 
