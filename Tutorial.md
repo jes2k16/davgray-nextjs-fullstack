@@ -106,6 +106,16 @@ Next.js Full Stack Project w/ Nextjs 15 & React 19
 - implement sentry in both forms
 
 
+-----------Part 5: Next.js with React-Hook-Form, Drizzle-Zod, & ShadCN/ui-----------
+> npm install zod drizzle-zod react-hook-form @hookform/resolvers
+> npm install shadcn@latest add form
+
+- create the src\zod-schema\customer.ts
+- create the src\zod-schema\ticket.ts
+
+- create src\app\(rs)\customers\form\CustomerForm.tsx
+
+
 
 
 

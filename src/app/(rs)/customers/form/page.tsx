@@ -1,8 +1,9 @@
 import { getCustomer } from "@/lib/queries/getCustomer";
 import { BackButton } from "@/components/BackButton";
 import * as Sentry from "@sentry/nextjs";
+import CustomerForm from "@/app/(rs)/customers/form/CustomerForm";
 
-export default async function CustomerForm({ 
+export default async function CustomerFormPage({ 
     searchParams, 
 }: { 
     searchParams: Promise<{ [key: string]: string | undefined }>
@@ -22,17 +23,12 @@ export default async function CustomerForm({
             }
 
             // put the customer data in the form
-            return (
-                <div>
-                    <h1>Customer Form</h1>
-                    <p>{customer.firstName} {customer.lastName}</p>
-                </div>
-            );
+            return <CustomerForm customer={customer} />
         }
         else {
 
             // new customer form component
-            return <div>No customer ID provided</div>;
+            return <CustomerForm />
         }
         
     } catch (error) {
